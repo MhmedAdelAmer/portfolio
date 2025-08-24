@@ -11,6 +11,7 @@
 
 <body>
 
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">
             <a href="#">MOHMED</a>
@@ -27,8 +28,6 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#resume">Resume</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li class="mobile-social">
-            </li>
         </ul>
 
         <div class="social-icons">
@@ -36,14 +35,14 @@
                     class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/reel/DEAoR5tNFS_" aria-label="Instagram"><i
                     class="fab fa-instagram"></i></a>
-            <a href="01208248081" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://wa.me/201208248081" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
             <a href="https://www.linkedin.com/in/mohamed-amer-503099309" aria-label="LinkedIn"><i
                     class="fab fa-linkedin"></i></a>
             <a href="https://github.com/MhmedAdelAmer" aria-label="GitHub"><i class="fab fa-github"></i></a>
         </div>
     </nav>
 
-
+    <!-- Hero -->
     <header id="home">
         <div class="hero">
             <h1>Hi, I'm <span>Mohmed Adel Amer</span></h1>
@@ -52,17 +51,17 @@
         </div>
     </header>
 
-
+    <!-- About -->
     <section id="about" class="section">
         <h2>About Me</h2>
         <p>
             I'm a web developer with a passion for creating beautiful and functional websites.
             I have experience in HTML, CSS, JavaScript, and PHP.
             I love to learn new technologies and improve my skills.
-
         </p>
     </section>
 
+    <!-- Skills -->
     <section class="section" id="skills">
         <h2 class="title">Skills</h2>
         <div class="content">
@@ -92,6 +91,7 @@
         </div>
     </section>
 
+    <!-- Projects -->
     <section id="projects" class="section">
         <h2>Projects</h2>
         <div class="projects">
@@ -101,17 +101,14 @@
                 <a href="https://mhmedadelamer.github.io/curds/">GitHub</a>
             </div>
             <div class="card">
-                <!-- <div class="project-image">
-                    <img src="img/proj1.jpg" alt="Login Form Project" />
-                </div> -->
-                <h3>login page </h3>
+                <h3>login page</h3>
                 <p>Clean and responsive login page built using HTML and CSS.</p>
                 <a href="https://mhmedadelamer.github.io/log-in/">GitHub</a>
             </div>
         </div>
     </section>
 
-                <!-- cv -->
+    <!-- Resume -->
     <section id="resume" class="section">
         <div class="wrap">
             <h1 class="title"><span class="underline">My Resume</span></h1>
@@ -126,8 +123,7 @@
                     <div>
                         <h3 class="section-title">Summary</h3>
                         <p class="summary">
-                            Proficient in HTML, CSS, JavaScript, and
-                            database management.
+                            Proficient in HTML, CSS, JavaScript, and database management.
                         </p>
                     </div>
 
@@ -143,7 +139,6 @@
 
                 <div class="actions">
                     <a class="btn primary" href="CV/CV. Mohamed Adel Amer.pdf" download>
-                        <!-- download icon -->
                         <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
                             stroke-linecap="round" stroke-linejoin="round">
                             <path d="M12 3v10"></path>
@@ -153,7 +148,6 @@
                         Download CV
                     </a>
                     <button class="btn" onclick="window.print()">
-                        <!-- printer icon -->
                         <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
                             stroke-linecap="round" stroke-linejoin="round">
                             <path d="M6 9V4h12v5"></path>
@@ -164,24 +158,41 @@
                     </button>
                 </div>
             </section>
+        </div>
+    </section>
 
-            <section id="contact" class="section contact">
-                <h2>Contact Me</h2>
-                <p>Available for freelance work. Let's build something great together!</p>
-                <div href="" class="btn">mohamedadelsedky@gmail.com</div>
-                <div href="" class="btn">01208248081</div>
-            </section>
-            <footer>
-                <p>© 2025 Mohmed adel amer. All Rights Reserved.</p>
-            </footer>
-            <script>
-                const menuToggle = document.getElementById("menu-toggle");
-                const navLinks = document.getElementById("nav-links");
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <p>Available for freelance work. Let's build something great together!</p>
+        <a href="mailto:mohamedadelsedky@gmail.com" class="btn">mohamedadelsedky@gmail.com</a>
+        <a href="tel:+201208248081" class="btn">01208248081</a>
+    </section>
 
-                menuToggle.addEventListener("click", () => {
-                    navLinks.classList.toggle("active");
-                });
-            </script>
-    </body>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Mohmed Adel Amer. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100090089289045" aria-label="Facebook"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/reel/DEAoR5tNFS_" aria-label="Instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/201208248081" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/mohamed-amer-503099309" aria-label="LinkedIn"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/MhmedAdelAmer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+</body>
 
 </html>
