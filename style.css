@@ -429,26 +429,6 @@ img {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ===== Halo Circles Around Image ===== */
 .imag {
     position: relative;
 }
@@ -498,7 +478,6 @@ img {
     100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
-/* ===== Responsive: Move Image Above Text on Mobile ===== */
 @media (max-width: 768px) {
     header {
         flex-direction: column-reverse;
@@ -509,6 +488,18 @@ img {
         width: 250px;
         height: 250px;
         margin-bottom: 2rem;
+        margin-right: -1.5rem; 
+    }
+
+    
+    .hero {
+        margin-bottom: 5rem; 
+    }
+
+    .hero h1,
+    .hero p,
+    .btn {
+        margin-top: 1rem; /* مسافة إضافية بين العناصر */
     }
 
     .circle-anim.one { width: 280px; height: 280px; }
