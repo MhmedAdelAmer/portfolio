@@ -19,7 +19,8 @@
     --radius: 18px;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -27,8 +28,8 @@ body {
     line-height: 1.6;
     color: var(--text);
     background: radial-gradient(1200px 600px at 80% -10%, #17305622, transparent 60%),
-                radial-gradient(900px 500px at 10% -5%, #1e3a8a22, transparent 60%),
-                var(--bg);
+        radial-gradient(900px 500px at 10% -5%, #1e3a8a22, transparent 60%),
+        var(--bg);
     --dot: #99c0ff22;
     background-image:
         radial-gradient(var(--dot) 1px, transparent 1px),
@@ -100,15 +101,37 @@ a {
     cursor: pointer;
 }
 
-/* ===== Header / Hero ===== */
+/* ===== Header  ===== */
 header {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-                url('img/11.jpg') no-repeat center/cover;
+        url('img/prot.jpg') no-repeat center/cover;
     text-align: center;
+}
+
+.imag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--primary);
+    box-shadow: var(--shadow);
+    margin-bottom: 1.5rem;
+    margin-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+    object-fit: cover;
+
 }
 
 .hero h1 {
@@ -221,7 +244,7 @@ header {
 
 /* ===== Contact & Footer ===== */
 .contact p {
-    margin-bottom:1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 footer {
@@ -229,6 +252,11 @@ footer {
     padding: 5rem;
     background: #1e293b;
     font-size: 2rem;
+}
+
+#footer-social-icons {
+    margin-top: 1rem;
+    justify-content: center;
 }
 
 /* ===== Media Queries ===== */
@@ -269,7 +297,9 @@ footer {
 }
 
 @media print {
-    .title, .actions {
+
+    .title,
+    .actions {
         display: none !important;
     }
 
@@ -323,6 +353,7 @@ footer {
         display: block;
     }
 }
+
 .social-icons {
     display: flex;
     gap: 15px;
@@ -339,40 +370,18 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container {
     width: 90%;
     margin: auto;
-    overflow: hidden;}
+    overflow: hidden;
+}
 
 
 img {
-    max-width: 100%; /* يجعل الصور متجاوبة ولا تتجاوز عرض العنصر الحاوي لها */
+    max-width: 100%;
     height: auto;
 }
 
-/* تصميم مبدئي للأعمدة (تكون تحت بعضها في الجوال) */
 .column {
     width: 100%;
     float: none;
@@ -381,31 +390,23 @@ img {
 }
 
 
-/* =========================================
-   شاشات التابلت (Tablets)
-   ========================================= */
-/* سيتم تطبيق هذه الأنماط إذا كان عرض الشاشة 768 بكسل أو أكثر */
+
 @media (min-width: 768px) {
     body {
-        font-size: 18px; /* زيادة حجم الخط قليلاً */
+        font-size: 18px;
     }
 
     .container {
         width: 85%;
     }
 
-    /* تحويل الأعمدة لتكون بجانب بعضها */
     .column {
-        width: 50%; /* كل عمود يأخذ نصف العرض */
+        width: 50%;
         float: left;
     }
 }
 
 
-/* =========================================
-   الشاشات الكبيرة (Desktops)
-   ========================================= */
-/* سيتم تطبيق هذه الأنماط إذا كان عرض الشاشة 1024 بكسل أو أكثر */
 @media (min-width: 1024px) {
     body {
         font-size: 20px;
@@ -413,18 +414,12 @@ img {
 
     .container {
         width: 80%;
-        max-width: 1200px; /* تحديد عرض أقصى للحاويات في الشاشات الكبيرة جداً */
+        max-width: 1200px;
     }
 
-    /* يمكن تعديل تصميم الأعمدة للشاشات الكبيرة إذا لزم الأمر */
-    /* على سبيل المثال، إذا كان لديك 3 أعمدة */
+
     .column-3 {
         width: 33.3%;
         float: left;
     }
 }
-
-
-
-
-
